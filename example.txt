@@ -1,0 +1,9 @@
+Text file of example queries:
+
+
+Example of getting song lyrics
+    # genius = Genius(config.genius_api_key)
+    # artist = genius.search_song("Smashing Pumpkins", max_songs=3, sort="title")
+    # song = artist.song("1979")
+    # print(song.lyrics)
+
