@@ -51,9 +51,9 @@ def remove_lyrics_junk(lyrics):
     return modified_lyrics
 
 
-# Create JSON to perform actions on
-def init():
-    artists_songs = get_artists_songs(Artists.SMASHING_PUMPKINS).json()
+# Given a Genius artist_id, write songs by given artist to json
+def write_artists_songs_to_json(artist_id):
+    artists_songs = get_artists_songs(artist_id).json()
     with open('data.json', 'w') as f:
         f.write(json.dumps(artists_songs))
     
@@ -66,11 +66,10 @@ def init():
 
 
 def main():
-    # If you want to experiement with artists aside from whats in data.json,
-    # then change get_artists_songs(..) param artist_id and comment out init() call
-    # init()
+    # Given a Genius artist_id, write songs by given artist to json
+    # write_artists_songs_to_json(artist_id)
 
-    # Print lyrics
+    # Query for lyrics, prints lyrics
     genius = Genius(config.genius_api_key)
     artist_query = input("Enter artist name:")
     song_query = input("Enter a song name:")
