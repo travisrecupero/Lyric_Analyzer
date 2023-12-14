@@ -25,20 +25,28 @@ Takes in an artist/song and outputs its "meaning".
 
 ## Instructions / Usage
 
-1. Configuration:
+1. **Install Requirements**
+
+    Before running the program, ensure you have installed the required dependencies. In your terminal, navigate to the project directory and run:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. Configuration:
 
     - Obtain API keys and fill in the respective fields in `config.py`.
     - Replace `genius_rapid_api_key`, `genius_api_key`, and `topic_tagging_api_key` with your valid keys.
 
-2. Open your terminal.
+3. **Run the Application:**
 
-3. Navigate to the project directory.
+    - Open your terminal.
+    - Navigate to the project directory.
+    - Run the following command:
 
-4. Run the following command:
-
-    ```bash
-    python main.py
-    ```
+        ```bash
+        python main.py
+        ```
 
 ## Output
 Example of program running using 1979 by The Smashing Pumpkins:
