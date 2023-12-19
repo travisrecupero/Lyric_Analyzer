@@ -25,7 +25,7 @@ Takes in an artist/song and outputs its "meaning".
 
 ## Instructions / Usage
 
-1. **Install Requirements**
+1. **Install Requirements:**
 
     Before running the program, ensure you have installed the required dependencies. In your terminal, navigate to the project directory and run:
 
@@ -33,7 +33,7 @@ Takes in an artist/song and outputs its "meaning".
     pip install -r requirements.txt
     ```
 
-2. Configuration:
+2. **Configuration:**
 
     - Obtain API keys and fill in the respective fields in `config.py`.
     - Replace `genius_rapid_api_key`, `genius_api_key`, and `topic_tagging_api_key` with your valid keys.
